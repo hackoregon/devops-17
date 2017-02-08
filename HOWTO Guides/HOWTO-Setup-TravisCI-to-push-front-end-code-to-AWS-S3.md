@@ -39,10 +39,5 @@ sudo gem install travis
   ```
   - press [Enter]
   - press [Ctrl]-D
-- ```
-git add .
-```
-- ```
-git push origin master
-```
+- run the usual *git add* and *git push* commands to enable TravisCI to see a new commit
 - check in Travis-CI to see the progress of the first build - if any errors or warnings, give your devops contact a shout (or drop a note to the #dev_ops channel in Slack)
