@@ -9,16 +9,16 @@ This outlines how to set this up for those unfamiliar with configuring persisten
 
 Edit your shell's configuration file e.g. for Mac users, the default shell is bash, so you'll edit the .bashrc file found in your home directory.  Using a simple menu-driven editor like nano, here's how you'd get into the file to edit it:
 
-'''
+```
 nano ~/.bashrc
-'''
+```
 
 Add the following *export* statements, substituting your personal access keys after the equals signs:
 
-'''
+```
 export AWS_ACCESS_KEY_ID=MYACCESSKEYID
 export AWS_SECRET_ACCESS_KEY=MYSECRETACCESSKEY
-'''
+```
 
 # Notes
 Additional discussion of AWS credentials can be found here:
