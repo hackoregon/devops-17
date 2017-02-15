@@ -74,6 +74,12 @@ deploy:
   bucket: "${AWS_SECRET_KEY}"
   region: us-west-2
 ```
+- In the travis-ci.org config for your repo, add the following environment variables with your AWS credentials making sure that your keys are not exposed:
+
+```
+AWS_ACCESS_KEY
+AWS_SECRET_KEY
+```
 - run the usual *git add* and *git push* commands to enable TravisCI to see a new commit
 - check in Travis-CI to see the progress of the first build - if any errors or warnings, give your devops contact a shout (or drop a note to the #dev_ops channel in Slack)
 
