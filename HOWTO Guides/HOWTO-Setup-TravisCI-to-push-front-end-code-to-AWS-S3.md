@@ -4,16 +4,17 @@ Initial CI (Continuous Integration) pipeline to enable Hack Oregon front end tea
 The architecture approach taken by Hack Oregon in the Winter/Spring 2017 season for front end code is to host that code in AWS S3 buckets (one bucket per Hack Oregon project), and push that code using TravisCI.  TravisCI is hooked to the project team's front end github repo (e.g. https://github.com/hackoregon/housing-frontend), and will automatically run test and build on every commit to master branch.  If all tests pass, assets will be automatically pushed to the associated S3 bucket in AWS.
 
 #Steps
-(This content to be cleaned up and elaborated)
-- Nominate a "lead" from the front end developers who will work with their devops contact to setup the initial pipeline
-- Create a new Hack Oregon repo (if one doesn't already exist) to house the project team's front end code
-- take a copy of the "frontend starter" repo (https://github.com/hackoregon/hackoregon-frontend-starter) and push into the project's repo:
-  - clone your new repo (e.g. housing-frontend)
+- Prerequisites: we've tested this with Ruby 2.3.x and Git 2.7.x-2.10.x
+
+- Aside: nominate a "lead" from the front end developers who will work with their devops contact to setup the initial pipeline
+- Create a new Hack Oregon repo (if one doesn't already exist) to house the project team's front end code e.g. if your team's base repo is named *team-budget*, then the frontend repo should be named *team-budget-frontend*
+- make a copy of the "frontend starter" repo and push into the project's repo:
+  - clone your new repo (e.g. team-budget-frontend)
   ```
-  git clone <newRepo>
-  cd <newRepo>
+  git clone <new-Repo-URL>
+  cd <new-Repo>
   ```
-  - add the upstream remote
+  - add the frontend starter's repo (https://github.com/hackoregon/hackoregon-frontend-starter) as upstream:
   ```
   git remote add upstream <upstreamRepo>
   ```
@@ -21,7 +22,7 @@ The architecture approach taken by Hack Oregon in the Winter/Spring 2017 season 
   ```
   git pull upstream master  
   ```
-  - push back to your new repo
+  - push the current code in your local to the `<newRepo>`
   ```
   git push origin master
   ```
