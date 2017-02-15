@@ -60,21 +60,20 @@ The architecture approach taken by Hack Oregon in the Winter/Spring 2017 season 
     - If you're not currently a member of Hack Oregon, you'll need to get that level of access (i.e. you'll need to be added [here](https://github.com/orgs/hackoregon/people) or find someone who has it
   - look for the `<new-Repo>` - if you don't see it listed there, click the *Sync account* button in the top-right corner of the TravisCI page
   - NOTE: you will need *Admin* permission level in the `<new-Repo>` to be able to actually enable the repo in TravisCI - until then, the repo will instead be listed under the heading "You require admin rights to enable these repositories" and you won't be able to toggle in 'on'
-- configure the .travis.yml file, including the project's S3 `bucket` and `AWS_ACCESS_KEY_ID` (see [this page](https://github.com/hackoregon/hacku-devops-2017/wiki/Assignment-7-Deploy-to-ECS) for an example of the recommended configuration approach)
+- configure the .travis.yml file, including the project's S3 `bucket` and `AWS_ACCESS_KEY_ID` (see [this page](https://github.com/hackoregon/hacku-devops-2017/wiki/Assignment-2---Travis-CI-Introduction#travisfile)
   - use the S3 `bucket` that was assigned to your project, which will be the repository for your project's frontend code
-  - use an `AWS_ACCESS_KEY_ID` that has write access privileges on the S3 bucket you're using
-- install the travis CLI (if you haven't already installed it on your computer):
+  - use an `AWS_ACCESS_KEY_ID` that has write access privileges on the S3 bucket you're using. Your travis file should look something like this:
+  ```yaml
+language: node_js
+node_js:
+- '6.0'
+install: npm install
+deploy:
+  provider: s3
+  access_key_id: "${AWS_ACCESS_KEY}"
+  bucket: "${AWS_SECRET_KEY}"
+  region: us-west-2
 ```
-gem install travis
-```
-- encrypt the AWS secret key:
-  - run this command:
-  ```
-  travis encrypt --add deploy.secret_access_key
-  ```
-  - paste in the SECRET_ACCESS_KEY that goes with the AWS_ACCESS_KEY_ID
-  - press [Enter]
-  - press [Ctrl]-D
 - run the usual *git add* and *git push* commands to enable TravisCI to see a new commit
 - check in Travis-CI to see the progress of the first build - if any errors or warnings, give your devops contact a shout (or drop a note to the #dev_ops channel in Slack)
 
