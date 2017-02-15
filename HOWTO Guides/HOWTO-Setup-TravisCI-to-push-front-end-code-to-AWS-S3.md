@@ -11,7 +11,7 @@ The architecture approach taken by Hack Oregon in the Winter/Spring 2017 season 
 ## Sync the frontend starter kit with your team's frontend repo
 - Create a new Hack Oregon repo (if one doesn't already exist) to house the project team's front end code e.g. if your team's base repo is named *team-budget*, then the frontend repo should be named *team-budget-frontend*
 - make a copy of the "frontend starter" repo and push into the project's repo:
-  - clone your new repo (e.g. team-budget-frontend)
+  - clone your new repo (e.g. team-budget-frontend):
   ```
   git clone <new-Repo-URL>
   cd <new-Repo>
@@ -20,12 +20,12 @@ The architecture approach taken by Hack Oregon in the Winter/Spring 2017 season 
   ```
   git remote add upstream https://github.com/hackoregon/hackoregon-frontend-starter
   ```
-  - pull from the upstream repo
+  - pull from the upstream repo:
   ```
   git pull upstream master --allow-unrelated-histories
   ```
   - NOTE: you may run into merge conflicts if the `<newRepo>` contains any files that already exist in the upstream repo.  The usual fun of merging conflicting files will have to be done.  YMMV.
-  - NOTE: if you're running git 2.9 or later (e.g. 2.10.1 is found on our Macs as of 2017-02-14), you may see the following output if you skip the --allow-unrelated-histories flag (see this article for details http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories#37938036)
+  - NOTE: if you're running git 2.9 or later (e.g. 2.10.1 is found on our Macs as of 2017-02-14), you may see the following output if you skip the --allow-unrelated-histories flag (see this article for details http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories#37938036):
   ```
   git pull upstream master
 warning: no common commits
@@ -44,7 +44,7 @@ fatal: refusing to merge unrelated histories
   git add .
   git commit -m "(leave a good commit message for your teammates to read)"
   ```
-  - push the current code in your local to the `<new-Repo>`
+  - push the current code in your local to the `<new-Repo>`:
   ```
   git push origin master
   ```
@@ -74,3 +74,12 @@ sudo gem install travis
   - press [Ctrl]-D
 - run the usual *git add* and *git push* commands to enable TravisCI to see a new commit
 - check in Travis-CI to see the progress of the first build - if any errors or warnings, give your devops contact a shout (or drop a note to the #dev_ops channel in Slack)
+
+## Getting TravisCI visibility for other members of the team
+- the person who initially setup the TravisCI build from your team's repo will be able to watch every build
+- however, the rest of the team members should have the ability to see what happens during the build (in case errors occur that they want to fix)
+- for other team members who are contributors to the team's GitHub repo, they'll have to activate the repo in their own TravisCI account:
+  - go to the My Repositories area of your https://travis-ci.org account, and click the *+* link
+  - click the *Sync acccount* button to get the repo added to your account's listing
+  - browse back to the main page https://travis-ci.org
+  - You should see the project listed there now
