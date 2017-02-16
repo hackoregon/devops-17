@@ -64,16 +64,16 @@ The architecture approach taken by Hack Oregon in the Winter/Spring 2017 season 
   - use the S3 `bucket` that was assigned to your project, which will be the repository for your project's frontend code
   - use an `AWS_ACCESS_KEY_ID` that has write access privileges on the S3 bucket you're using. Your travis file should look something like this:
   ```yaml
-language: node_js
-node_js:
-- '6.0'
-install: npm install
-deploy:
-  provider: s3
-  access_key_id: "${AWS_ACCESS_KEY}"
-  bucket: "${AWS_SECRET_KEY}"
-  region: us-west-2
-```
+  language: node_js
+  node_js:
+  - '6.0'
+  install: npm install
+  deploy:
+    provider: s3
+    access_key_id: "${AWS_ACCESS_KEY}"
+    bucket: "${AWS_SECRET_KEY}"
+    region: us-west-2
+  ```
 - In the travis-ci.org config for your repo, add the following environment variables with your AWS credentials making sure that your keys are not exposed:
 
 ```
@@ -81,9 +81,14 @@ AWS_ACCESS_KEY
 AWS_SECRET_KEY
 ```
 - run the usual *git add* and *git push* commands to enable TravisCI to see a new commit
-- check in Travis-CI to see the progress of the first build - if any errors or warnings, give your devops contact a shout (or drop a note to the #dev_ops channel in Slack)
+- check in Travis-CI to see the progress of the first build - if any errors or warnings, give your devops contact a shout (or drop a note to the `dev_ops` channel in Slack)
+- NOTE: if you see errors related to an inability of Travis to upload the files to the S3 bucket, the bucket policy may be blocking access.  The bucket policy can be adjusted by those with admin-level access to each S3 bucket - check with your devops contact for assistance.  In the Travis build log you the error may look something like:
+```
+Oops, It looks like you tried to write to a bucket that isn't yours or doesn't exist yet. Please create the bucket before trying to write to it.
+failed to deploy
+```
 
-## Seeing TravisCI build results by other members of the team
+## Viewing TravisCI build results: other members of the team
 - the person who initially setup the TravisCI build from your team's repo is able to watch every build already
 - however, the rest of the team members may wish to see what happens during the build (in case errors occur that they want to fix)
 - for those additional team members who are contributors to the team's GitHub repo, they'll have to "activate"  the repo in their own TravisCI account:
