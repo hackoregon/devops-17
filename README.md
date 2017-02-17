@@ -10,8 +10,9 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 - Backend https://github.com/hackoregon/team-budget
 
 ## Emergency Response
-- Frontend https://github.com/hackoregon/emergency-response-frontend
-- Backend https://github.com/hackoregon/emergency-response
+- Frontend https://github.com/hackoregon/emergency-response-frontend  
+- Backend https://github.com/hackoregon/emergency-response-backend  
+- General https://github.com/hackoregon/emergency-response  
 
 ## Homelessness
 - Frontend https://github.com/hackoregon/teamHomelessness-frontend
@@ -32,7 +33,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 
 ## Emergency Response
 - Frontend https://travis-ci.org/hackoregon/emergency-response-frontend
-- Backend 
+- Backend https://travis-ci.org/hackoregon/emergency-response-backend  
 
 ## Homelessness
 - Frontend 
