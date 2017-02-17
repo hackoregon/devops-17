@@ -45,3 +45,24 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 ## Transportation
 - Frontend https://travis-ci.org/hackoregon/transportation-frontend
 - Backend 
+
+# Team Project URLs (Staging)
+## Budget
+- Frontend http://hacko-budget-staging.s3-website-us-west-2.amazonaws.com/
+- Backend 
+
+## Emergency Response
+- Frontend http://hacko-emergency-response-staging.s3-website-us-west-2.amazonaws.com/
+- Backend 
+
+## Homelessness
+- Frontend 
+- Backend 
+
+## Housing
+- Frontend http://hacko-housing-staging.s3-website-us-west-2.amazonaws.com/
+- Backend 
+
+## Transportation
+- Frontend http://hacko-transportation-staging.s3-website-us-west-2.amazonaws.com/
+- Backend 
