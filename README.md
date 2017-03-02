@@ -36,7 +36,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 - Backend https://travis-ci.org/hackoregon/emergency-response-backend  
 
 ## Homelessness
-- Frontend 
+- Frontend https://travis-ci.org/hackoregon/teamHomelessness-frontend
 - Backend 
 
 ## Housing
@@ -57,7 +57,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 - Backend 
 
 ## Homelessness
-- Frontend 
+- Frontend http://hacko-homeless-staging.s3-website-us-west-2.amazonaws.com/
 - Backend 
 
 ## Housing
