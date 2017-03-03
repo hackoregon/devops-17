@@ -57,7 +57,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 - Backend 
 
 ## Homelessness
-- Frontend http://hacko-homeless-staging.s3-website-us-west-2.amazonaws.com/
+- Frontend http://hacko-homelessness-staging.s3-website-us-west-2.amazonaws.com/
 - Backend 
 
 ## Housing
