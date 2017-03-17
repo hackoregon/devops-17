@@ -29,7 +29,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 # Team Travis repos
 ## Budget
 - Frontend https://travis-ci.org/hackoregon/team-budget-frontend
-- Backend 
+- Backend https://travis-ci.org/hackoregon/team-budget
 
 ## Emergency Response
 - Frontend https://travis-ci.org/hackoregon/emergency-response-frontend
@@ -47,7 +47,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 - Frontend https://travis-ci.org/hackoregon/transportation-frontend
 - Backend 
 
-# Team Project URLs (Staging)
+# Team Project URLs (Integration/Staging)
 ## Budget
 - Frontend http://hacko-budget-staging.s3-website-us-west-2.amazonaws.com/
 - Backend 
