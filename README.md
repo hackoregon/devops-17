@@ -48,6 +48,9 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 - Backend 
 
 # Team Project URLs (Integration/Staging)
+## Index
+- Backend http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/endpoints/
+
 ## Budget
 - Frontend http://hacko-budget-staging.s3-website-us-west-2.amazonaws.com/
 - Backend 
@@ -58,7 +61,7 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 
 ## Homelessness
 - Frontend http://hacko-homelessness-staging.s3-website-us-west-2.amazonaws.com/
-- Backend http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/endpoints/
+- Backend http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/homeless/
 
 ## Housing
 - Frontend http://hacko-housing-staging.s3-website-us-west-2.amazonaws.com/
