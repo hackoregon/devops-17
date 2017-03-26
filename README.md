@@ -29,14 +29,14 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 # Team Travis repos
 ## Budget
 - Frontend https://travis-ci.org/hackoregon/team-budget-frontend
-- Backend 
+- Backend https://travis-ci.org/hackoregon/team-budget
 
 ## Emergency Response
 - Frontend https://travis-ci.org/hackoregon/emergency-response-frontend
 - Backend https://travis-ci.org/hackoregon/emergency-response-backend  
 
 ## Homelessness
-- Frontend 
+- Frontend https://travis-ci.org/hackoregon/teamHomelessness-frontend
 - Backend 
 
 ## Housing
@@ -45,20 +45,23 @@ Heading down the path towards the Spring 2017 demo of the five main Hack Oregon 
 
 ## Transportation
 - Frontend https://travis-ci.org/hackoregon/transportation-frontend
-- Backend 
+- Backend https://travis-ci.org/hackoregon/transportation-backend
 
-# Team Project URLs (Staging)
+# Team Project URLs (Integration/Staging)
+## Index
+- Backend http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/endpoints/
+
 ## Budget
 - Frontend http://hacko-budget-staging.s3-website-us-west-2.amazonaws.com/
-- Backend 
+- Backend http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/budget
 
 ## Emergency Response
 - Frontend http://hacko-emergency-response-staging.s3-website-us-west-2.amazonaws.com/
 - Backend 
 
 ## Homelessness
-- Frontend 
-- Backend 
+- Frontend http://hacko-homelessness-staging.s3-website-us-west-2.amazonaws.com/
+- Backend http://hacko-integration-658279555.us-west-2.elb.amazonaws.com/homeless/
 
 ## Housing
 - Frontend http://hacko-housing-staging.s3-website-us-west-2.amazonaws.com/
